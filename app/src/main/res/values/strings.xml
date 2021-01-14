@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">LoginAndRegistrationKotlin</string>
+    <string name="password">Password</string>
+    <string name="email_id">Email ID</string>
+    <string name="name">Name</string>
+    <string name="phone">Moble Number</string>
+</resources>

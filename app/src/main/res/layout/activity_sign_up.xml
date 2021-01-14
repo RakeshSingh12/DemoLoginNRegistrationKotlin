@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+
+    <RelativeLayout
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp">
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:hint="@string/name"
+            android:textSize="16sp"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"
+            android:layout_marginBottom="@dimen/_2dp"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/teal_700"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_below="@+id/rlEmailId"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp">
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:hint="@string/email_id"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/teal_200"
+            android:layout_marginBottom="@dimen/_2dp"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/teal_200"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp">
+
+        <EditText
+            android:id="@+id/editPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_5dp"
+            android:background="@null"
+            android:hint="@string/phone"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textColorHint="@color/teal_200"
+            android:textSize="16sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/teal_200"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp">
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:hint="@string/password"
+            android:textSize="16sp"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:textColorHint="@color/teal_200"
+            android:layout_marginBottom="@dimen/_2dp"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/teal_200"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/bottomLogin"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:background="@color/teal_200"
+        android:text="Save"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/_20dp"
+        android:textColor="@color/teal_200"
+        android:textSize="16sp"
+        android:layout_height="@dimen/_40dp"/>
+
+</LinearLayout>

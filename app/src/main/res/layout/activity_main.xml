@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".SignInActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlEmailId"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp">
+
+        <EditText
+            android:id="@+id/editUserEmail"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email_id"
+            android:textSize="@dimen/_16sp"
+            android:textColor="@color/teal_700"
+            android:textColorHint="@color/teal_700"
+            android:layout_marginBottom="@dimen/_2dp"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/teal_700"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlPassword"
+        android:layout_below="@+id/rlEmailId"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40dp">
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="match_parent"
+            android:background="@null"
+            android:hint="@string/password"
+            android:textSize="@dimen/_16sp"
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:textColorHint="@color/teal_200"
+            android:layout_marginBottom="@dimen/_2dp"
+            android:layout_marginStart="@dimen/_5dp"
+            android:layout_height="match_parent"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/teal_200"
+            android:layout_alignParentBottom="true"
+            />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bottomLogin"
+        android:layout_width="match_parent"
+        android:layout_marginStart="@dimen/_30dp"
+        android:layout_marginEnd="@dimen/_30dp"
+        android:background="@color/teal_200"
+        android:text="LOGIN"
+        android:layout_marginTop="@dimen/_20dp"
+        android:textColor="@color/teal_200"
+        android:textSize="@dimen/_16sp"
+        android:layout_height="@dimen/_40dp"/>
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50dp"
+        android:gravity="center"
+        android:text="Sign Up"/>
+
+</LinearLayout>
